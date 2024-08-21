@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --color-primary:#C1DCDC;
+    --font-primary: "Nunito", sans-serif;
+
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: var(--font-primary);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:1em;
+    
+}
+
+.logo > img{
+    width: 70px;
+    height: auto;
+    }
+
+nav{
+    display: flex;
+    gap:3.5em;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+nav>div:not(.logo){
+    padding-top: 4em;
+}
+
+.nav-menu{
+    padding: 2em 3em;
+    font-weight: bold;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: #048934;
+    
+}
+ .nav-menu:hover{
+        background-color: rgb(36, 43, 36);
+        color: lightgreen;
+        transform: translateY(-5px);
+ }
+
+ .search-bar{
+    display: flex;
+    padding: 2em;
+    margin-top: 1em;   
+    justify-content: center;
+    align-items: center;
+    height: 2vh;
+ }
+
+ .search-bar>input{
+    border-radius: 0.7em;
+    width: 125em;
+    height: 2.8em;
+    padding: 1em;
+    border-color: grey;
+    font-size: 1em;
+}
+
+.main{
+    display: flex;
+    gap:4em;
+    justify-content: center;
+    margin-top: 1em;
+
+}
+
+.left-description{
+    width:35em;
+    height: auto;
+    text-align: center;
+}
+
+.heading{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.content{
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+.get-started{
+    margin-top: 2.5em;
+    padding: 1em;
+    border-radius: 0.4em;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    /* margin-left: 12em; */
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.services-provided{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 3em;
+    font-size: 2.3em;
+}
+
+.services-provided {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1em;
+    font-size: 2.3em;
+}
+
+.service-item {
+    flex: 1 1 30%; /* Adjusts the item to take up 30% of the container */
+    margin: 1em; 
+    text-align: center; /* Centers text under images */
+}
+
+.service-image {
+    width: 100%; /* Makes the image container full width */
+    height: 450px; /* Sets a fixed height for uniformity */
+    overflow: hidden; /* Hides overflow if the image is larger */
+    display: flex; /* Allows centering of the image */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    margin-top: 0.7em;
+}
+
+.service-image img {
+    width: 100%; /* Maintains aspect ratio */
+    height: 100%; /* Makes the image fill the height of the container */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+footer {
+    background-color: #f8f8f8; /* Light background for the footer */
+    padding: 20px 2em; /* Padding for top and bottom, with side padding */
+    
+}
+
+.footer-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Four equal columns */
+    grid-column-gap:10em; /* Space between columns */
+    grid-row-gap: 20px; /* Space between rows */
+    justify-items: center; /* Center items horizontally */
+    align-items: start; /* Align items to the start vertically */
+    margin-left: 10em;
+}
+
+.logo-paragraph-container {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.logo-footer {
+    width: 100px; /* Increased size for better visibility */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+}
+
+.paragraph {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text for better aesthetics */
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size: 1.5em; /* Increased font size for titles */
+    margin-bottom: 10px; /* Space below titles */
+}
+
+.footer-column {
+    text-align: center; /* Center text in each column */
+    
+}
+
+.footer-link {
+    display: block; /* Make links block elements for better spacing */
+    margin: 5px 0; /* Space between links */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em;
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+
+/* media-queries */
+@media (max-width: 768px) {
+    .service-item {
+        flex: 1 1 100%; /* Stacks items on smaller screens */
+        margin: 0.5em 0; /* Adjusts margin for smaller screens */
+    }
+}
